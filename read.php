@@ -18,10 +18,9 @@ $product = new Product($db);
   
 // read products will be here
 
-// query products
+// query products - pass value in URL
 $stmt = $product->read($_GET['value']);
 $num = $stmt->rowCount();
-  
 // check if more than 0 record found
 if($num>0){
   
